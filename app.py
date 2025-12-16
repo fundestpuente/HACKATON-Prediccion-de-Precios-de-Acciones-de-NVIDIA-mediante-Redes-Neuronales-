@@ -19,7 +19,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # === TÍTULO Y SIDEBAR ===
-st.title("📈 NVIDIA AI-Sight: Inversión Inteligente")
+st.title("📈 Optimización de Inversiones con IA: Predicción de Precios de Acciones de NVIDIA")
 st.markdown("Sistema de **Deep Learning (LSTM)** y **Optimización Lineal** para la toma de decisiones en NVDA.")
 
 st.sidebar.header("⚙️ Panel de Control")
