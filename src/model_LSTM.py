@@ -17,7 +17,7 @@ def model_LSTM(window_size, epochs, batch_size, X_train, y_train):
     """
 
     model_seq = Sequential()
-    model_seq.add(LSTM(units=50, return_sequences=False, input_shape=(window_size, 1)))
+    model_seq.add(LSTM(units=50, return_sequences=False, input_shape=(X_train.shape[1], X_train.shape[2])))    
     model_seq.add(Dense(1))
     model_seq.compile(optimizer='adam', loss='mean_squared_error')
 
