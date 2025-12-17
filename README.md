@@ -16,7 +16,7 @@
 2.  **Análisis Multivariado:** Incorporamos indicadores técnicos (RSI, MACD) y volumen para robustecer la predicción.
 3.  **Optimización de Cartera:** Un módulo prescriptivo que sugiere decisiones basadas en la predicción.
 
-[cite_start]**Objetivo de Rendimiento:** MAPE (Error Porcentual Absoluto Medio) < 2%[cite: 110].
+**Objetivo de Rendimiento:** MAPE (Error Porcentual Absoluto Medio) < 2%.
 
 ## 🚀 Características Clave (Roadmap Hackathon)
 
@@ -52,7 +52,6 @@ Utilizando la salida del modelo LSTM, aplicamos algoritmos de optimización para
 | **Alan Palma** | Analista del Modelo AI |
 | **Sofia Feijóo** | Analista de Resultados |
 
-[cite_start][cite: 77]
 
 ## 📊 Estructura del Proyecto
 
