@@ -9,7 +9,7 @@ from src.optimize import optimizar_posicion
 from src.indicators import agregar_indicadores_tecnicos
 
 # === CONFIGURACIÓN DE PÁGINA ===
-st.set_page_config(page_title="NVIDIA AI-Sight", layout="wide", page_icon="📈")
+st.set_page_config(page_title="NVIDIA AI-Sight", layout="wide")
 
 # Estilos CSS personalizados
 st.markdown("""
@@ -20,19 +20,19 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # === TÍTULO ===
-st.title("📈 NVIDIA AI-Sight: Inversión Inteligente")
+st.title("NVIDIA AI-Sight: Inversión Inteligente")
 st.markdown("Sistema de **Deep Learning (LSTM)** y **Optimización Lineal** para la toma de decisiones en NVDA.")
 
 # === SIDEBAR: CONTROLES ===
-st.sidebar.header("⚙️ Panel de Control")
+st.sidebar.header("Panel de Control")
 
 # 1. Selección de Fuente de Datos
-st.sidebar.subheader("📡 Fuente de Datos")
+st.sidebar.subheader("Fuente de Datos")
 modo_datos = st.sidebar.radio("Selecciona la fuente:", ("Simulación (CSV 2023)", "Mercado en Vivo (Yahoo Finance)"))
 
 # 2. Parámetros de Inversión
 st.sidebar.markdown("---")
-st.sidebar.subheader("💰 Parámetros de Cartera")
+st.sidebar.subheader("Parámetros de Cartera")
 presupuesto = st.sidebar.number_input("Presupuesto Disponible (USD)", value=5000, step=100)
 riesgo = st.sidebar.slider("Tolerancia al Riesgo (Factor Volatilidad)", 1.0, 100.0, 50.0)
 
@@ -94,7 +94,7 @@ with col1:
     st.plotly_chart(fig, use_container_width=True)
 
 with col2:
-    st.subheader("🤖 AI Advisor")
+    st.subheader("AI Advisor")
     
     if df.empty:
         st.error("No hay datos disponibles.")
@@ -151,7 +151,7 @@ with col2:
     st.markdown("---")
     
     # --- MÓDULO DE OPTIMIZACIÓN (Tu diferenciador) ---
-    st.write("### 🧠 Estrategia Sugerida")
+    st.write("### Estrategia Sugerida")
     
     # Proxy de volatilidad (Rango del día)
     volatilidad_proxy = (last_row['high'] - last_row['low']) 
